@@ -1,0 +1,104 @@
+Day-32[08-08-2023]:
+===================
+	Good Evening All..
+
+	Try to rename your names in the given format i.e.,
+		RollNumber-Name-Collegecode
+
+		Dont include any spaces between these format and dont follow your own formats if you are following your own formats then attendance will not be considered for you for the day.
+
+	Yesterday Concept:
+	==================
+		- Offline Bootstrap Overview
+
+	Todays Concept:
+	===============
+		=> Bootstrap-4 classnames
+
+		- container => margin-left,margin-right => spacing
+		- container-fluid => No margins
+
+		=> background
+			Syntax:
+				bg-colornames
+		- bg-success
+
+		=> colors:
+		- primary => dark blue
+		- info => light blue
+		- success => green
+		- warning => yellow
+		- danger => red
+		- secondary => grey
+		- dark => black
+		- light => white
+
+		=> Jumbotron
+			- Text => center, background grey color
+
+		=> Web page
+			- 12 columns
+		=> 5 device scalings
+			- xm => very small
+			- sm => small
+			- md => medium
+			- lg => large
+			- xl => extra large
+		=> Grid systems
+			- 12
+			- 6,6
+			- 4,4,4
+			- 3,3,3,3
+			- 4,8
+			- 2,2,2,2,2,2
+			- 1,1,1,1,1,1,1,1,1,1,1,1
+		=> row => 2 col
+
+		=> points
+			0 to 5
+		=> margins
+			- margin => all directions
+			- margin-left => ml
+			- margin-right => mr
+			- margin-top => mt
+			- margin-bottom => mb
+			- margin-[left,right] => mx
+			- margin-[top,bottom] => my
+
+		=> Padding
+			- padding => all directions
+			- padding-left => pl
+			- padding-right => pr
+			- padding-top => pt
+			- padding-bottom => pb
+			- padding-[left,right] => px
+			- padding-[top,bottom] => py
+
+		=> CRUD Operations
+			- C => Create
+			- R => Read
+			- U => Update
+			- D => Delete
+
+		=> Models
+			- text => CharField
+			- email => EmailField
+			- number => IntegerField
+		- MakeMigrations
+		 => Class => Interface file => 0001_initial.py
+		- Migrate
+			=> Inteface => SQl query
+			- appname_classname
+
+	-> py manage.py shell
+	-> from appname.models import classname
+	-> print(dir(classname))
+	-> print(classname.__doc__)
+	-> print(classname._met.get_fields())
+
+	ORM => Object Relational Mapper
+	ORM Queries 
+
+	Data Insertion or Creation:
+	===========================
+		- save
