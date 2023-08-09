@@ -1,0 +1,84 @@
+Day-33[09-08-2023]:
+===================
+	Good Evening All..
+
+	Try to rename your names in the given format i.e.,
+		RollNumber-Name-Collegecode
+
+		Dont include any spaces between these format and dont follow your own formats if you are following your own formats then attendance will not be considered for you for the day.
+
+	Yesterday Concept:
+	==================
+		- Boootstrap-4 Components like 
+			=> container
+			=> container-fluid
+			=> jumbotron
+			=> margin
+			=> padding
+			=> grid systems
+			=> colors
+			=> text-alignments
+		- Model Creation for Employee
+		- MakeMigrations and Migrate
+		- ORM Query for Creating a single record
+
+	Todays Concept:
+	===============
+		- Creation:
+		===========
+			- save()
+				- objectname = classname.(fieldname=value)
+				- objectname.save()
+			- create() => No need of save
+				- objectname = classname.objects.create(fieldname=value)
+			- bulk_create() => No need of save
+				- objectname = classname.objects.bulk_create([classname(id,fieldvalues),classname(id,fieldvalues)])
+
+		- Reading:
+		==========
+			- get
+				- Only for unique values we need to prefer
+				- If the value is not existing then it thows error
+				- objectname = classname.objects.get(fieldname=value)
+				- objectname.fieldname
+			- filter
+				- It allows duplicate and unique values
+				- It will not display error if value is not existing in table
+				- objectname = classname.objects.get(fieldname=value)
+				- objectname.fieldname => It thows error for that need to use looping concept
+			- all
+				- objectname = classname.objects.all()
+			- slicing
+				- objectname = classname.objects.all()[indexvalue]
+				- objectname = classname.objects.all()[startindexvalue:stopindexvalue]
+				- objectname = classname.objects.all()[startindexvalue:stopindexvalue:stepindexvalue]
+			- first
+				- objectname = classname.objects.first()
+			- last
+				- objectname = classname.objects.last()
+			- order_by
+				- objectname = classname.objects.order_by(fieldname)
+				- objectname = classname.objects.order_by("-fieldname") for reverse data display
+
+		- Update:
+		=========
+			- get 
+				- objectname = classname.objects.get(fieldname=value)
+				- objectname.fieldname = newvalue
+				- objectname.save()
+			- filter
+				- objectname = classname.objects.filter(fieldname=value).update(fieldname=newvalue)
+				- no need of using save method
+			- all
+				- objectname = classname.objects.all(fieldname=value).update(fieldname=newvalue)
+				- no need of using save method
+
+		- Delete:
+		=========
+			- get
+				- objectname = classname.objects.get(fieldname=value)
+				- objectname.delete()
+			- filter
+				- objectname = classname.objects.filter(fieldname=value).delete()
+			- all
+				- objectname = classname.objects.all(fieldname=value).delete()

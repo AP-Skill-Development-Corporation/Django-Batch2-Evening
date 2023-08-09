@@ -1,0 +1,22 @@
+h2{
+	color:red;
+	text-align: center;
+}
+form{
+	background-color: lightseagreen;
+	margin-left: 30%;
+	margin-right: 30%;
+	border-radius: 5%;
+	padding: 30px;
+
+}
+button{
+	color: white;
+	background-color: red;
+	border-radius:30px;
+}
+input[type=text]{
+	padding:30px;
+	width:30%;
+	background: #f1f1f1;
+}
