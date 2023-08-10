@@ -1,0 +1,36 @@
+Day-34[10-08-2023]:
+===================
+	Good Evening All..
+
+	Try to rename your names in the given format i.e.,
+		RollNumber-Name-Collegecode
+
+		Dont include any spaces between these format and dont follow your own formats if you are following your own formats then attendance will not be considered for you and you will be dismissed from thhe meeting.
+
+	Yesterday Concept:
+	==================
+		- ORM Queries for CRUD Operations by using shell
+
+	Todays Concept:
+	===============
+		- buttons
+			class="btn btn-colorname" => bootstrap-3
+			class="btn btn-outline-colorname" => bootstrap-4
+		- GET
+			- sensitive information will be displayed in url of a site
+			- By default it will be considerd as GET method for each form
+			- It stores upto 2046
+		- POST
+			- It will not display the sensitive information
+			- We need to use method type as post
+			- It stores n characters
+			- DTL => {% csrf_token %}
+		- DTL
+			- variable => {{variablename}}
+			- url => {% url 'urlname' %}
+			- static => {% load static %} {% static 'folder/filename.extension' %}
+			- Loops
+				- for
+					{% for iterationvariablename in iterator %}
+						{{iterationvariablename.fieldname}}
+					{% endfor %}
