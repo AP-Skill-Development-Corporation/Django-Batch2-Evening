@@ -14,3 +14,6 @@ Django Internship Evening Batch
   - ORM Queries Explanation for CRUD Operations with sample examples on each
   - Bootstrap-4 card,shadow,form controls,border with sample example on each
   - Recorded Video Link[Click Here]()
+## Day-34(10-08-2023):
+  - CRUD Operations by using basic procedure with bootstrap-4
+  - Recorded Video Link[Click Here]()
