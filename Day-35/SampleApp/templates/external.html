@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/sample.css' %}">
+
+	<script type="text/javascript" src="{% static 'js/sample.js' %}"></script>
+
+	<style type="text/css">
+		body{
+			background-image: url("{% static 'images/card10.jpg' %}");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<h2>Registration Form</h2>
+	<form method="POST">
+		{% csrf_token %}
+		<input type="text" name="uname" placeholder="Enter your username"><br><br>
+		<input type="number" name="mbl" placeholder="Enter your mobile number"><br><br>
+		<input type="email" name="eml" placeholder="Enter your email address"><br><br>
+		<input type="password" name="psw" placeholder="Enter your password"><br><br>
+		<input type="password" name="cpsw" placeholder="Enter your confirm password"><br><br>
+
+		<button>Register</button>
+
+	</form>
+	<img src="{% static 'images/card2.png' %}">
+</body>
+</html>
