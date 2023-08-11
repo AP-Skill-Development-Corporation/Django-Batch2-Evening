@@ -17,3 +17,7 @@ Django Internship Evening Batch
 ## Day-34(10-08-2023):
   - CRUD Operations by using basic procedure with bootstrap-4
   - Recorded Video Link [Click Here]()
+## Day-35(11-08-2023):
+  - CRUD Operations by using forms Concept
+  - Widgets for forms
+  - Recorded Video Link [Click Here]()
