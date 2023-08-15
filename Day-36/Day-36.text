@@ -1,0 +1,37 @@
+Day-36[14-08-2023]:
+===================
+	Good Evening All..
+
+	Try to rename your names in the given format i.e.,
+		RollNumber-Name-Collegecode
+
+		Dont include any spaces between these format and dont follow your own formats if you are following your own formats then attendance will not be considered for you and you will be dismissed from thhe meeting.
+
+	Previous Day Concept:
+	=====================
+		- Forms concept for a model class
+		- Bootstrap styling for form fields
+		- CRUD Operations by using forms concept with backend validations 
+		- DTL Language for conditional statement
+		- Message Concept
+
+	Todays Concept:
+	===============
+		- Mail Concept:
+		===============
+			- 500 mails
+			- login
+			- profile
+			- security
+			- two step verification => app password
+			- app passkey => password
+
+		- Settings.py:
+		==============
+			- EMAIL_USE_TLS = True
+			- EMAIL_HOST = 'smtp.gmail.com'
+			- EMAIL_PORT = 587
+			- EMAIL_HOST_USER = "your mailid"
+			- EMAIL_HOST_PASSWORD = "your passkey from mail"
+
+

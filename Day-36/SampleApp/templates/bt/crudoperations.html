@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRUD</title>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">SA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'crd' %}">CRUD</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+<div class="container-fluid mt-4">
+	<div class="row mx-2">
+		<div class="col-md-3 card mr-2 shadow-lg border border-success h-100">
+			<div class="card-body">
+				<h4>Add Employee</h4>
+				<form method="post">
+					{% csrf_token %}
+					<input type="text" name="ei" class="form-control my-2" placeholder="Id">
+					<input type="text" name="en" class="form-control my-2" placeholder="Name">
+					<input type="text" name="ed" class="form-control my-2" placeholder="Designation">
+					<input type="number" name="ea" class="form-control my-2" placeholder="Age" min=20 max=65>
+					<div class="row">
+						<div class="col">
+							<input type="reset" value="Reset" class="btn btn-outline-danger form-control">
+						</div>
+						<div class="col">
+							<input type="submit" value="Add Employee" class="btn btn-outline-success form-control">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col card ml-2 shadow-lg border border-primary h-100">
+			<div class="card-body">
+				<h4>Employee Details</h4>
+				<table class="table table-hover table-striped">
+					<tr class="bg-dark text-light">
+						<th>Sno</th>
+						<th>Employee Id</th>
+						<th>Employee Name</th>
+						<th>Employee Designation</th>
+						<th>Actions</th>
+					</tr>
+					{% for i in z %}
+						<tr>
+							<td>{{forloop.counter}}</td>
+							<td>{{i.eid}}</td>
+							<td>{{i.ename}}</td>
+							<td>{{i.edesg}}</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<a href="{% url 'eupd' i.id %}" class="btn btn-outline-info form-control">Edit</a>
+									</div>
+									<div class="col">
+										<a href="{% url 'edte' i.id %}" class="btn btn-outline-danger form-control">Delete</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
