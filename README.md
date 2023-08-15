@@ -21,3 +21,6 @@ Django Internship Evening Batch
   - CRUD Operations by using forms Concept
   - Widgets for forms
   - Recorded Video Link [Click Here]()
+## Day-36(14-08-2023):
+  - Mail Sending Concept for single and multiple users
+  - Recorded Video Link [Click Here]()
