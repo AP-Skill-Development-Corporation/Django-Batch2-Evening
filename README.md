@@ -24,3 +24,6 @@ Django Internship Evening Batch
 ## Day-36(14-08-2023):
   - Mail Sending Concept for single and multiple users
   - Recorded Video Link [Click Here]()
+## Day-37(15-08-2023):
+  - Mini Project on Note Sharing Project completed Design and template blocks
+  - Recorded Video Link [Click Here]()
