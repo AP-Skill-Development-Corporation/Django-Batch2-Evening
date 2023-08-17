@@ -28,5 +28,8 @@ Django Internship Evening Batch
   - Mini Project on Note Sharing Project completed Design and template blocks
   - Recorded Video Link [Click Here]()
 ## Day-38(16-08-2023):
-  - Mini Project on Note Sharing Project
+  - Mini Project on Note Sharing Application
+  - Recorded Video Link [Click Here]()
+## Day-39(17-08-2023):
+  - Mini Project on Note Sharing Application for Validations and Toast Messages
   - Recorded Video Link [Click Here]()
