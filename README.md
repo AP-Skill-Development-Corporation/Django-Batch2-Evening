@@ -33,3 +33,6 @@ Django Internship Evening Batch
 ## Day-39(17-08-2023):
   - Mini Project on Note Sharing Application for Validations and Toast Messages
   - Recorded Video Link [Click Here]()
+## Day-40(18-08-2023):
+  - Mini Project on Note Sharing Application => User Authentication and Authorisation
+  - Recorded Video Link [Click Here]()
