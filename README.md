@@ -39,3 +39,6 @@ Django Internship Evening Batch
 ## Day-41(19-08-2023):
   - Mini Project on Note Sharing Application => Different Role Updation by using Admin
   - Recorded Video Link [Click Here]()
+## Day-42(22-08-2023):
+  - Mini Project on Note Sharing Application => Teacher and Student Profile Model Creation
+  - Recorded Video Link [Click Here]()
