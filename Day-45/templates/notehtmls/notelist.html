@@ -1,0 +1,60 @@
+{% extends 'notehtmls/base.html' %}
+{% block title %}Notes List{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-md-3 card shadow-lg mx-2 h-100">
+			<div class="card-body">
+				<h4>Add Notes</h4>
+				<form method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					{% for i in p %}
+						{{i}}
+					{% endfor %}
+					<div class="row my-2">
+						<div class="col">
+							<input type="reset" value="Clear" class="form-control btn btn-outline-danger">
+						</div>
+						<div class="col">
+							<input type="submit" value="Add Notes" class="form-control btn btn-outline-success">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-md card shadow-lg mx-2 h-100">
+			<div class="card-body">
+				<h4>Notes List</h4>
+				<table class="table">
+					<tr>
+						<th>Sno</th>
+						<th>Branch</th>
+						<th>Year</th>
+						<th>Subject</th>
+						<th>Actions</th>
+					</tr>
+					{% for j in z %}
+					<tr>
+						<td>{{forloop.counter}}</td>
+						<td>{{j.branch}}</td>
+						<td>{{j.year}}</td>
+						<td>{{j.subject}}</td>
+						<td>
+							<div class="row">
+								<div class="col">
+									<a href="" class="btn btn-outline-info form-control">Edit</a>
+								</div>
+								<div class="col">
+									<a href="" class="btn btn-outline-danger 
+								form-control">Delete</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

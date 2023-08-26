@@ -1,0 +1,81 @@
+{% extends 'notehtmls/base.html' %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="row">
+		<div class="card col-md-3 shadow-lg h-100 m-2">
+			<div class="card-body text-center">
+				<img src="{{request.user.pfimg.url}}" class="rounded-circle" height="150px" width="150px">
+				<h4>{{request.user.username}}</h4>
+			</div>
+		</div>
+		<div class="card col-md shadow-lg h-100 m-2">
+			<div class="card-body">
+				<h4>User Details</h4>
+				<table class="table">
+					<tr>
+						<td>First Name</td>
+						<td>{{request.user.first_name}}</td>
+						<td>Last Name</td>
+						<td>{{request.user.last_name}}</td>
+					</tr>
+					<tr>
+						<td>Unique ID</td>
+						<td>{{request.user.uq}}</td>
+						<td>Email</td>
+						<td>{{request.user.email}}</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>{{request.user.gd}}</td>
+						<td>Mobile Number</td>
+						<td>{{request.user.mb}}</td>
+					</tr>
+					<tr>
+						<td>Role Type</td>
+						<td>
+							{% if request.user.role == 'G' %}
+								<p class="badge badge-warning">Guest</p>
+							{% elif request.user.role == 'T' %}
+								<p class="badge badge-info">Teacher</p>
+							{% else %}
+								<p class="badge badge-success">Student</p>
+							{% endif %}
+						</td>
+						<td>Account Status</td>
+						<td>
+							{% if request.user.is_active %}
+								<p class="badge badge-success">Active</p>
+							{% else %}
+								<p class="badge badge-danger">In-Active</p>
+							{% endif %}
+						</td>
+					</tr>
+					<tr>
+						<td>Account Created</td>
+						<td>{{request.user.date_joined}}</td>
+						<td>Last Login</td>
+						<td>{{request.user.last_login}}</td>
+					</tr>
+					{% if request.user.is_teacher == 1 %}
+					<tr>
+						<td>Branch</td>
+						<td>{{request.user.tprofile.branch}}</td>
+						<td>Subject</td>
+						<td>{{request.user.tprofile.subjects}}</td>
+					</tr>
+					{% else %}
+					<tr>
+						<td>Branch</td>
+						<td>{{request.user.sprofile.branch}}</td>
+						<td>Year</td>
+						<td>{{request.user.sprofile.year}}</td>
+					</tr>
+					{% endif %}
+				</table>
+				<a href="{% url 'uppfle' %}" class="btn btn-block btn-outline-success">Update Profile</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
