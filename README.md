@@ -48,3 +48,6 @@ Django Internship Evening Batch
 ## Day-44(24-08-2023):
   - Mini Project on Note Sharing Application => Teacher,Student Profile and Image Updation
   - Recorded Video Link [Click Here]()
+## Day-45(26-08-2023):
+  - Mini Project on Note Sharing Application => Notes Model Creation
+  - Recorded Video Link [Click Here]()
